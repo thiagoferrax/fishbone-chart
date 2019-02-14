@@ -1,0 +1,106 @@
+.fishboneChart{
+    flex: 1;
+    display: flex;        
+    justify-items: center;
+}
+
+.causes {
+    top: 5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.causesGroup {
+    display: flex;
+    flex: 1;    
+}
+
+.top {
+    outline: blue;
+    border-bottom: 2px solid rgb(76, 76, 87);
+}
+
+.bottom {
+    border-top: 2px solid rgb(76, 76, 87);    
+}
+
+.cause {    
+    width: 80%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background: rgb(76, 76, 87, .1);
+    font-size: 12px;
+    font-weight: 400;        
+    border-radius: 5%;
+    padding: 5px 0px 5px 0px;
+        
+}
+
+.causeAndLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.effect {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;    
+}
+
+.effectValue {    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400; 
+    padding: 5px 10px 5px 10px;   
+    background: rgb(76, 76, 87, .1);
+    border-left: 2px solid rgb(76, 76, 87);
+    border-radius: 5%;
+}
+
+.lineCauseTop {
+    flex: 1;
+    height:100%;
+    background: linear-gradient(to top right, transparent calc(50% - 2px), black, transparent calc(50% + 1px) );
+}
+
+.rootCauses {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 5;
+    height:100%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    padding: 10px 0px;
+}
+
+.lineCauseBottom {
+    flex: 1;
+    height:100%;
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), black, transparent calc(50% + 1px) );
+}
+
+.lineEffect {
+    width: 100%;    
+    border-bottom: 2px solid rgb(76, 76, 87);
+}
+
+.causeContent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

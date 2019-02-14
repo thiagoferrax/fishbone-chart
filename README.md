@@ -12,15 +12,25 @@ npm install --save fishbone-chart
 
 ## Usage
 
-```jsx
+```jsx 
 import React, { Component } from 'react'
 
-import MyComponent from 'fishbone-chart'
+import FishboneChart from 'fishbone-chart'
 
 class Example extends Component {
   render () {
+    const data = {
+      'Bad coffee': {
+        'Procedures': ['Too much water', 'Too many grounds', 'Lack of training'],
+        'Equipment': ['Dirty cups', 'Coffee not hot enough', 'Dirty basket'],
+        'Material': ['Bad sugar', 'Lids do not fit cup', 'Bad cream'],
+        'People': ['Wrong fee', 'No training', 'Rude'],
+        'Machine': ['Not working', 'Deregulated', 'Dirty']
+      }
+    }
+
     return (
-      <MyComponent />
+      <FishboneChart data={data} />
     )
   }
 }
