@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/fishbone-chart.svg)](https://www.npmjs.com/package/fishbone-chart) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![fishbonechart](https://user-images.githubusercontent.com/43149895/52877028-9f794d00-3137-11e9-8cb4-2cbe1e736107.gif)
+![fishbonechart](https://user-images.githubusercontent.com/43149895/52883522-06076680-314a-11e9-90ba-09206071c2ce.gif)
 
 ## Install
 
