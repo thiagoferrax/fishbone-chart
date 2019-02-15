@@ -12,13 +12,22 @@ export default class App extends Component {
         'Material': ['Bad sugar', 'Lids do not fit cup', 'Bad cream'],
         'People': ['Wrong fee', 'No training', 'Rude'],
         'Machine': ['Not working', 'Deregulated', 'Dirty']
+      },
+      'Scrum not working': {
+        'Principles': ['Functional software (SW) is not released'],
+        'Product Owner (PO)': ['No authority to prioritize', 'Poor interaction with the team'],
+        'Sprint': ['SW not released for validation', 'Sprint speed is not measured', 'Team is controlled from outside'],
+        'Planning': ['PO does not explain the backlog'],
+        'Development Team': ['Members dedicated to specific roles', 'Does not deliver what was promised'],
       }
     }
 
     return (
-      <div style={{ width: 800, margin: "15px auto" }}>
+      <div style={{ width: 1000, margin: "15px auto" }}>
         <h1>FishboneChart Example</h1>
-          <FishboneChart data={data} />
+        <hr/>
+        <br/>
+        <FishboneChart data={data} />
       </div>
     )
   }

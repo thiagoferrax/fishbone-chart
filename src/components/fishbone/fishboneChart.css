@@ -17,25 +17,33 @@
 }
 
 .top {
-    outline: blue;
-    border-bottom: 2px solid rgb(76, 76, 87);
+    border-bottom: 2px solid;
+    border-radius: 5%;
 }
 
 .bottom {
-    border-top: 2px solid rgb(76, 76, 87);    
+    border-top: 2px solid;
+    border-radius: 5%;
+}
+
+.left {
+    border-left: 2px solid;
+    border-radius: 5%;
+}
+
+.all {
+    border: 2px solid;
+    border-radius: 5%;
 }
 
 .cause {    
-    width: 80%;
     display: flex;
     justify-content: center; 
     align-items: center;   
-    background: rgb(76, 76, 87, .1);
-    font-size: 12px;
+    width: 80%;
+    font-size: 0.8em;
     font-weight: 400;        
-    border-radius: 5%;
     padding: 5px 0px 5px 0px;
-        
 }
 
 .causeAndLine {
@@ -46,12 +54,101 @@
     height: 100%;
 }
 
+.legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.legendLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: 400; 
+    margin-bottom: 5px;        
+}
+
+.blue{
+    background: rgb(0, 192, 239, 0.2);
+}
+
+.red {
+    background: rgb(221, 75, 57, 0.2);
+}
+
+.green {
+    background: rgb(0, 166, 90, 0.2);
+}
+
+.yellow {
+    background:rgb(243, 156, 18, 0.2);
+}
+
+.pink {
+    background: rgb(202, 25, 90, 0.2);
+}
+
+.purple {
+    background: rgb(85, 82, 153, 0.2);
+}
+
+.orange {
+    background:rgb(255, 119, 1, 0.2);
+}
+
+.blueBorder{
+    border-color: rgb(0, 192, 239) !important;
+}
+
+.redBorder {
+    border-color: rgb(221, 75, 57) !important;
+}
+
+.greenBorder {
+    border-color: rgb(0, 166, 90) !important;
+}
+
+.yellowBorder {
+    border-color: rgb(243, 156, 18) !important;
+}
+
+.pinkBorder {
+    border-color: rgb(202, 25, 90) !important;
+}
+
+.purpleBorder {
+    border-color: rgb(85, 82, 153) !important;
+}
+
+.orangeBorder {
+    border-color: rgb(255, 119, 1) !important;
+}
+
+.labelSquare{
+    flex: 1;
+    width: 25px;
+    height: 8px;    
+    margin: 0px 4px 0px 4px;
+}
+
+.labelLineThrough{
+    text-decoration: line-through;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.label{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
 .effect {    
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    font-weight: 400;    
 }
 
 .effectValue {    
@@ -59,42 +156,88 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 400; 
-    padding: 5px 10px 5px 10px;   
-    background: rgb(76, 76, 87, .1);
-    border-left: 2px solid rgb(76, 76, 87);
-    border-radius: 5%;
+    padding: 5px 10px 5px 10px;     
 }
 
-.lineCauseTop {
-    flex: 1;
-    height:100%;
-    background: linear-gradient(to top right, transparent calc(50% - 2px), black, transparent calc(50% + 1px) );
-}
-
-.rootCauses {    
+.rootCauses {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     flex: 5;
-    height:100%;
-    font-size: 12px;
+    font-size: 0.7em;
     font-weight: 400;
     text-align: right;
-    padding: 10px 0px;
+    margin: 5px 0px;
+    height: 100%;
 }
 
-.lineCauseBottom {
+.diagonalLine {
     flex: 1;
     height:100%;
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), black, transparent calc(50% + 1px) );
+}
+
+.blueTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1px) );
+}
+
+.blueBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1px) );
+}
+
+.redTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1px) );
+}
+
+.redBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1px) );
+}
+
+.greenTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1px) );
+}
+
+.greenBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1px) );
+}
+
+.yellowTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1px) );
+}
+
+.yellowBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1px) );
+}
+
+.pinkTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1px) );
+}
+
+.pinkBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1px) );
+}
+
+.purpleTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1px) );
+}
+
+.purpleBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1px) );
+}
+
+.orangeTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1px) );
+}
+
+.orangeBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1px) );
 }
 
 .lineEffect {
     width: 100%;    
-    border-bottom: 2px solid rgb(76, 76, 87);
+    border-bottom: 2px solid;
 }
 
 .causeContent{

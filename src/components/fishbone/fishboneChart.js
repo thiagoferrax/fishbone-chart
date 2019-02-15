@@ -1,96 +1,167 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Grid from '../layout/grid'
 import './fishboneChart.css'
 
-const getTopCauses = (causes) => {
-    const categories = Object.keys(causes)
+const INITIAL_STATE = {causes: undefined, effect: undefined, index: 0}
 
-    const middle = parseInt(categories.length / 2)
-    const topArray = categories.slice(0, middle + 1)
-
-    const topCauses = topArray.map((category, index) => {
-        return (
-            <div key={`top_causes_${category}_${index}`} className="causeContent">
-                <div className="cause top">
-                    {category}
-                </div>
-                <div className="causeAndLine">
-                    {getRootCauses(causes[category])}
-                    <div className="lineCauseTop" />
-                </div>
-            </div>
-        )
-    })
-
-    return (<div className="causesGroup">{topCauses}</div>)
-}
-
-const getRootCauses = (rootCauses) => {
-    const causes = rootCauses.map((rootCause, index) => {
-        return (<div key={`root_causes_${rootCause}_${index}`}>{rootCause}</div>)
-    })
-    return (<div className="rootCauses">{causes}</div>)
-}
-
-const getBottomCauses = (causes) => {
-    const categories = Object.keys(causes)
-
-    const middle = parseInt(categories.length / 2)
-    const topArray = categories.slice(middle + 1)
-
-    const bottomCauses = topArray.map((category, index) => {
-        return (
-            <div key={`bottom_causes_${category}_${index}`} 
-            className="causeContent">
-                <div className="causeAndLine">
-                    {getRootCauses(causes[category])}
-                    <div className="lineCauseBottom" />
-                </div>
-                <div className="cause bottom">
-                    {category}
-                </div>
-            </div>
-        )
-    })
-
-    return (<div className="causesGroup">{bottomCauses}</div>)
-}
-
-const getCauses = (props) => {
-    const causes = Object.values(props.data)[0]
-
-    return (
-        <div className="causes">
-            {getTopCauses(causes)}
-            <div className="lineEffect" />
-            {getBottomCauses(causes)}
-        </div>
-    )
-}
-
-const getEffect = (props) => {
-    const effect = Object.keys(props.data)[0]
-    return (
-        <div className="effect">
-            <div className="effectValue">
-                {effect}
-            </div>
-        </div>
-    )
-}
-
-export default props => {
-    console.log('fishboneChart', props.data)
-    if (!props.data) {
-        return <React.Fragment></React.Fragment>
+export default class FishboneChart extends Component {
+    constructor(props) {
+        super(props)
+        this.state = INITIAL_STATE
     }
 
-    return (
-        <Grid cols={props.cols}>
-            <div className="fishboneChart">
-                {getCauses(props)}
-                {getEffect(props)}
+    componentWillMount() {
+        const data = this.props.data
+        if(data) {
+            const effect = Object.keys(data)[this.state.index]            
+            this.setState({causes: data[effect], effect})
+        }        
+    }
+
+    render() {
+        if (!this.state.causes) {
+            return <React.Fragment></React.Fragment>
+        }
+
+        return (
+            <Grid cols={this.props.cols}>
+                <div className="fishboneChart">
+                    {this.getCauses()}
+                    {this.getEffect()}
+                    {this.getLegend()}
+                </div>
+            </Grid >
+        )
+    }
+
+    getTopCauses(causes) {
+        const categories = Object.keys(causes)
+
+        const middle = parseInt(categories.length / 2)
+        const topArray = categories.slice(0, middle)
+
+        const color = this.getColor(this.state.index)
+        const topCauses = topArray.map((category, index) => {
+            return (
+                <div key={`top_causes_${category}_${index}`} className="causeContent">
+                    <div className={`cause top ${color} ${color}Border`}>
+                        {category}
+                    </div>
+                    <div className="causeAndLine">
+                        {this.getRootCauses(causes[category])}
+                        <div className={`diagonalLine ${color}TopBottom`}/>
+                    </div>
+                </div>
+            )
+        })
+
+        return (<div className="causesGroup">{topCauses}</div>)
+    }
+
+    getRootCauses(rootCauses) {
+        const causes = rootCauses.map((rootCause, index) => {
+            return (<div key={`root_causes_${rootCause}_${index}`}>{rootCause}</div>)
+        })
+        return (<div className="rootCauses">{causes}</div>)
+    }
+
+    getBottomCauses(causes) {
+        const categories = Object.keys(causes)
+
+        const middle = parseInt(categories.length / 2)
+        const bottomArray = categories.slice(middle)
+
+        const color = this.getColor(this.state.index)
+
+        const bottomCauses = bottomArray.map((category, index) => {
+            return (
+                <div key={`bottom_causes_${category}_${index}`}
+                    className="causeContent">
+                    <div className="causeAndLine">
+                        {this.getRootCauses(causes[category])}
+                        <div className={`diagonalLine ${color}BottomTop`}/>
+                    </div>
+                    <div className={`cause bottom ${color} ${color}Border`}>
+                        {category}
+                    </div>
+                </div>
+            )
+        })
+
+        return (<div className="causesGroup">{bottomCauses}</div>)
+    }
+
+    getCauses() {
+        const causes = this.state.causes
+        const color = this.getColor(this.state.index)
+        return (
+            <div className="causes">
+                {this.getTopCauses(causes)}
+                <div className={`lineEffect ${color}Border`} />
+                {this.getBottomCauses(causes)}
             </div>
-        </Grid >
-    )
+        )
+    }
+
+    getEffect() {        
+        const color = this.getColor(this.state.index)
+        return (
+            <div className="effect">
+                <div className={`effectValue left ${color} ${color}Border`}>
+                    {this.state.effect}
+                </div>
+            </div>
+        )
+    }
+
+    selectDataset(index) {
+        const data = this.props.data
+        if(data) {
+            const effect = Object.keys(data)[index]            
+            this.setState({causes: data[effect], effect, index})
+        }
+    }
+
+    getLegend() {        
+        const labels = Object.keys(this.props.data)
+
+        if(labels.length <= 1) {
+            return
+        }
+
+        const labelsDivs = labels.map((label, index) => {
+            const labelClass = index === this.state.index ? 'label' : 'labelLineThrough'
+            const color = this.getColor(index)
+            return (
+                <div key={`labels_${label}_${index}`} className="legendLabel" onClick={() => this.selectDataset(index)}>
+                    <div className={`labelSquare legend all ${color} ${color}Border`} />
+                    <div className={labelClass}>{label}</div>
+                </div>
+            )
+        })
+
+        return (
+            <div className="legend">
+                {labelsDivs}
+            </div>
+        )
+    }
+
+    getColor(index) {
+        const colors = [
+            'blue',
+            'red',
+            'green',
+            'yellow',
+            'pink',
+            'purple',
+            'orange'
+        ]
+    
+        if (index >= colors.length) {
+            index -= colors.length
+        }
+
+        return colors[index]
+    }
 }
