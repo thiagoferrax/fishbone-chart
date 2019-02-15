@@ -23,7 +23,7 @@ export default class App extends Component {
     }
 
     return (
-      <div style={{ width: 1000, margin: "15px auto" }}>
+      <div style={{ width: 1100, margin: "15px auto" }}>
         <h1>FishboneChart Example</h1>
         <hr/>
         <br/>

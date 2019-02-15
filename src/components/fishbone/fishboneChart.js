@@ -44,7 +44,7 @@ export default class FishboneChart extends Component {
         const topCauses = topArray.map((category, index) => {
             return (
                 <div key={`top_causes_${category}_${index}`} className="causeContent">
-                    <div className={`cause top ${color} ${color}Border`}>
+                    <div className={`cause top ${color}_ ${color}Border`}>
                         {category}
                     </div>
                     <div className="causeAndLine">
@@ -81,7 +81,7 @@ export default class FishboneChart extends Component {
                         {this.getRootCauses(causes[category])}
                         <div className={`diagonalLine ${color}BottomTop`}/>
                     </div>
-                    <div className={`cause bottom ${color} ${color}Border`}>
+                    <div className={`cause bottom ${color}_ ${color}Border`}>
                         {category}
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export default class FishboneChart extends Component {
         const color = this.getColor(this.state.index)
         return (
             <div className="effect">
-                <div className={`effectValue left ${color} ${color}Border`}>
+                <div className={`effectValue left ${color}_ ${color}Border`}>
                     {this.state.effect}
                 </div>
             </div>
@@ -130,11 +130,11 @@ export default class FishboneChart extends Component {
         }
 
         const labelsDivs = labels.map((label, index) => {
-            const labelClass = index === this.state.index ? 'label' : 'labelLineThrough'
+            const labelClass = index === this.state.index ? 'label_' : 'labelLineThrough'
             const color = this.getColor(index)
             return (
                 <div key={`labels_${label}_${index}`} className="legendLabel" onClick={() => this.selectDataset(index)}>
-                    <div className={`labelSquare legend all ${color} ${color}Border`} />
+                    <div className={`labelSquare legend all ${color}_ ${color}Border`} />
                     <div className={labelClass}>{label}</div>
                 </div>
             )
