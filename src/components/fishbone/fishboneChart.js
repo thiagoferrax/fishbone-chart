@@ -134,7 +134,7 @@ export default class FishboneChart extends Component {
             const color = this.getColor(index)
             return (
                 <div key={`labels_${label}_${index}`} className="legendLabel" onClick={() => this.selectDataset(index)}>
-                    <div className={`labelSquare legend all ${color}_ ${color}Border`} />
+                    <div className={`labelSquare legend all ${color}_dark ${color}Border`} />
                     <div className={labelClass}>{label}</div>
                 </div>
             )

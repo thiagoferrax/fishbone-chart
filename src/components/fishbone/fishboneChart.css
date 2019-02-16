@@ -67,7 +67,8 @@
     align-items: center;
     font-size: 0.9em;
     font-weight: 400; 
-    margin-bottom: 5px;        
+    margin-bottom: 5px;   
+    cursor: default;     
 }
 
 .blue_{
@@ -96,6 +97,34 @@
 
 .orange_ {
     background:rgb(255, 119, 1, 0.1);
+}
+
+.blue_dark{
+    background: rgb(0, 192, 239, 0.5);
+}
+
+.red_dark {
+    background: rgb(221, 75, 57, 0.5);
+}
+
+.green_dark {
+    background: rgb(0, 166, 90, 0.5);
+}
+
+.yellow_dark {
+    background:rgb(243, 156, 18, 0.5);
+}
+
+.pink_dark {
+    background: rgb(202, 25, 90, 0.5);
+}
+
+.purple_dark {
+    background: rgb(85, 82, 153, 0.5);
+}
+
+.orange_dark {
+    background:rgb(255, 119, 1, 0.5);
 }
 
 .blueBorder{
@@ -128,8 +157,8 @@
 
 .labelSquare{
     flex: 1;
-    width: 42px;
-    height: 12px;    
+    width: 40px;
+    height: 14px;    
     margin: 0px 4px 0px 4px;
 }
 
