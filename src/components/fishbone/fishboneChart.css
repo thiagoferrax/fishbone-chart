@@ -67,7 +67,7 @@
     align-items: center;
     font-size: 0.9em;
     font-weight: 400; 
-    margin-bottom: 5px;   
+    margin-bottom: 6px;   
     cursor: default;     
 }
 
@@ -157,7 +157,7 @@
 
 .labelSquare{
     flex: 1;
-    width: 40px;
+    width: 41px;
     height: 14px;    
     margin: 0px 4px 0px 4px;
 }
