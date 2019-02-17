@@ -1,19 +1,6 @@
 .fishboneChart{
-    flex: 1;
     display: flex;        
     justify-items: center;
-}
-
-.causes {
-    top: 5;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.causesGroup {
-    display: flex;
-    flex: 1;    
 }
 
 .top {
@@ -35,14 +22,36 @@
     border: 2px solid;
 }
 
+.causes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.causesGroup {
+    flex: 1;
+    display: flex;
+    margin-right: 10px;
+}
+
 .cause {    
     display: flex;
     justify-content: center; 
     align-items: center;   
-    width: 75%;
+    width: 60%;
     font-size: 0.9em;
     font-weight: 400;        
-    padding: 7px 0px;
+    padding: 5px 0px;
+}
+
+.cause {    
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    width: 60%;
+    font-size: 0.9em;
+    font-weight: 400;        
+    padding: 5px 0px;
 }
 
 .causeAndLine {
@@ -187,7 +196,7 @@
     align-items: center;
     font-size: 0.9em;
     font-weight: 400; 
-    padding: 7px 10px 7px 10px;  
+    padding: 5px 10px 5px 10px;  
 }
 
 .rootCauses {
@@ -195,12 +204,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    flex: 5;
+    flex: 3;
     font-size: 0.8em;
     font-weight: 400;
     text-align: right;
-    padding: 15px 0px;
-    height: 100%;
+    height:100%;
+    margin: 10px 0px;
 }
 
 .diagonalLine {
@@ -209,59 +218,59 @@
 }
 
 .blueTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1.5px) );
 }
 
 .blueBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1.5px) );
 }
 
 .redTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1.5px) );
 }
 
 .redBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1.5px) );
 }
 
 .greenTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1.5px) );
 }
 
 .greenBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1.5px) );
 }
 
 .yellowTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1.5px) );
 }
 
 .yellowBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1.5px) );
 }
 
 .pinkTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1.5px) );
 }
 
 .pinkBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1.5px) );
 }
 
 .purpleTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1.5px) );
 }
 
 .purpleBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(85, 82, 153), transparent calc(50% + 1.5px) );
 }
 
 .orangeTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1.5px) );
 }
 
 .orangeBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(255, 119, 1), transparent calc(50% + 1.5px) );
 }
 
 .lineEffect {

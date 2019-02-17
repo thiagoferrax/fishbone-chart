@@ -13,7 +13,7 @@ export default class App extends Component {
         'People': ['Wrong fee', 'No training', 'Rude'],
         'Machine': ['Not working', 'Deregulated', 'Dirty']
       },
-      'Scrum not working': {
+      'Bad Scrum': {
         'Principles': ['Functional software (SW) is not released'],
         'Product Owner (PO)': ['No authority to prioritize', 'Poor interaction with the team'],
         'Sprint': ['SW not released for validation', 'Sprint speed is not measured', 'Team is controlled from outside'],
