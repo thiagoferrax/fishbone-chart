@@ -6,7 +6,7 @@ export default class App extends Component {
 
   render() {
     const data = {
-      'Bad coffee': {
+      'Bad Coffee': {
         'Procedures': ['Too much water', 'Too many grounds', 'Lack of training'],
         'Equipment': ['Dirty cups', 'Coffee not hot enough', 'Dirty basket'],
         'Material': ['Bad sugar', 'Lids do not fit cup', 'Bad cream'],
