@@ -41,6 +41,7 @@
     width: 60%;
     font-size: 0.9em;
     font-weight: 400;        
+    color: #6c6c6c;
     padding: 5px 0px;
 }
 
@@ -51,6 +52,7 @@
     width: 60%;
     font-size: 0.9em;
     font-weight: 400;        
+    color: #6c6c6c;
     padding: 5px 0px;
 }
 
@@ -74,6 +76,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #6c6c6c;
     font-size: 0.9em;
     font-weight: 400; 
     margin-bottom: 6px;   
@@ -166,7 +169,7 @@
 
 .labelSquare{
     flex: 1;
-    width: 41px;
+    width: 42px;
     height: 14px;    
     margin: 0px 4px 0px 4px;
 }
@@ -175,12 +178,13 @@
     text-decoration: line-through;
     font-size: 0.9em;
     font-weight: 400;
+    color: #6c6c6c;
 }
 
 .label_{
     font-size: 0.9em;
     font-weight: 400;    
-    color: #000;
+    color: #6c6c6c;
 }
 
 .effect {    
@@ -196,6 +200,7 @@
     align-items: center;
     font-size: 0.9em;
     font-weight: 400; 
+    color: #6c6c6c;
     padding: 5px 10px 5px 10px;  
 }
 
@@ -207,6 +212,7 @@
     flex: 3;
     font-size: 0.8em;
     font-weight: 400;
+    color: #6c6c6c;
     text-align: right;
     height:100%;
     margin: 10px 0px;

@@ -19,6 +19,14 @@ export default class App extends Component {
         'Sprint': ['SW not released for validation', 'Sprint speed is not measured', 'Team is controlled from outside'],
         'Planning': ['PO does not explain the backlog'],
         'Development Team': ['Members dedicated to specific roles', 'Does not deliver what was promised'],
+      },
+      'Security Incident': {
+        'Technology': ['Weak encryption', 'No technology for remote data destruction'],
+        'Process': ['No process for reporting incident'],
+        'People': ['Worker lost laptop', 'Distraction was a factor'],
+        'Controls': ['Week password policy', 'No audit trail of the laptop information'],
+        'Procedure': ['No procedure for securing laptop at public locations'],
+        'Environment': ['No place to secure laptop overnight at workplace']
       }
     }
 
