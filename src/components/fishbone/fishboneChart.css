@@ -82,26 +82,30 @@
     font-weight: 400; 
     margin-bottom: 6px;   
     cursor: default;     
-}
+} 
 
 .blue_{
     background: rgb(0, 192, 239, 0.1);
 }
 
-.red_ {
-    background: rgb(221, 75, 57, 0.1);
+.black_{
+    background: rgb(17, 17, 17, 0.1);
+}
+
+.blue_two_ {
+    background: rgb(11, 120, 206, 0.1);
+}
+
+.gray_ {
+    background: rgb(104,115,140, 0.1);
 }
 
 .green_ {
-    background: rgb(0, 166, 90, 0.1);
-}
-
-.yellow_ {
-    background:rgb(243, 156, 18, 0.1);
+    background:rgb(48, 187, 187, 0.1);
 }
 
 .pink_ {
-    background: rgb(202, 25, 90, 0.1);
+    background: rgb(216, 27, 96, 0.1);
 }
 
 .purple_ {
@@ -116,20 +120,24 @@
     background: rgb(0, 192, 239, 0.5);
 }
 
-.red_dark {
-    background: rgb(221, 75, 57, 0.5);
+.black_dark{
+    background: rgb(17, 17, 17, 0.5);
+}
+
+.blue_two_dark {
+    background: rgb(11, 120, 206, 0.5);
+}
+
+.gray_dark {
+    background: rgb(104,115,140, 0.5);
 }
 
 .green_dark {
-    background: rgb(0, 166, 90, 0.5);
-}
-
-.yellow_dark {
-    background:rgb(243, 156, 18, 0.5);
+    background:rgb(48, 187, 187, 0.5);
 }
 
 .pink_dark {
-    background: rgb(202, 25, 90, 0.5);
+    background: rgb(216, 27, 96, 0.5);
 }
 
 .purple_dark {
@@ -144,20 +152,24 @@
     border-color: rgb(0, 192, 239) !important;
 }
 
-.redBorder {
-    border-color: rgb(221, 75, 57) !important;
+.blackBorder{
+    border-color: rgb(17, 17, 17) !important;
+}
+
+.blue_twoBorder {
+    border-color: rgb(11, 120, 206) !important;
+}
+
+.grayBorder {
+    border-color: rgb(104,115,140) !important;
 }
 
 .greenBorder {
-    border-color: rgb(0, 166, 90) !important;
-}
-
-.yellowBorder {
-    border-color: rgb(243, 156, 18) !important;
+    border-color: rgb(48, 187, 187) !important;
 }
 
 .pinkBorder {
-    border-color: rgb(202, 25, 90) !important;
+    border-color: rgb(216, 27, 96) !important;
 }
 
 .purpleBorder {
@@ -232,36 +244,44 @@
     background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 192, 239), transparent calc(50% + 1.5px) );
 }
 
-.redTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1.5px) );
+.blackTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(17, 17, 17), transparent calc(50% + 1.5px) );
 }
 
-.redBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(221, 75, 57), transparent calc(50% + 1.5px) );
+.blackBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(17, 17, 17), transparent calc(50% + 1.5px) );
+}
+
+.blue_twoTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(11, 120, 206), transparent calc(50% + 1.5px) );
+}
+
+.blue_twoBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(11, 120, 206), transparent calc(50% + 1.5px) );
+}
+
+.grayTopBottom {
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(104,115,140), transparent calc(50% + 1.5px) );
+}
+
+.grayBottomTop {
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(104,115,140), transparent calc(50% + 1.5px) );
 }
 
 .greenTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1.5px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(48, 187, 187), transparent calc(50% + 1.5px) );
 }
 
 .greenBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(0, 166, 90), transparent calc(50% + 1.5px) );
-}
-
-.yellowTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1.5px) );
-}
-
-.yellowBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(243, 156, 18), transparent calc(50% + 1.5px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(48, 187, 187), transparent calc(50% + 1.5px) );
 }
 
 .pinkTopBottom {
-    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1.5px) );
+    background: linear-gradient(to top right, transparent calc(50% - 2px), rgb(216, 27, 96), transparent calc(50% + 1.5px) );
 }
 
 .pinkBottomTop {
-    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(202, 25, 90), transparent calc(50% + 1.5px) );
+    background: linear-gradient(to bottom right, transparent calc(50% - 2px), rgb(216, 27, 96), transparent calc(50% + 1.5px) );
 }
 
 .purpleTopBottom {

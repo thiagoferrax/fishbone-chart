@@ -10,7 +10,7 @@ export default class FishboneChart extends Component {
         this.state = INITIAL_STATE
     }
 
-    componentWillMount() {
+    componentWillMount() { 
         const data = this.props.data
         if(data) {
             const effect = Object.keys(data)[this.state.index]            
@@ -150,12 +150,13 @@ export default class FishboneChart extends Component {
     getColor(index) {
         const colors = [
             'blue',
-            'red',
-            'green',
-            'yellow',
             'pink',
-            'purple',
-            'orange'
+            'gray',
+            'green',            
+            'blue_two',            
+            'orange',
+            'black',            
+            'purple'
         ]
     
         if (index >= colors.length) {
