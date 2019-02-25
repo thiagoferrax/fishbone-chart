@@ -117,35 +117,35 @@
 }
 
 .blue_dark{
-    background: rgb(0, 192, 239, 0.5);
+    background: rgb(0, 192, 239, 0.3);
 }
 
 .black_dark{
-    background: rgb(17, 17, 17, 0.5);
+    background: rgb(17, 17, 17, 0.3);
 }
 
 .blue_two_dark {
-    background: rgb(11, 120, 206, 0.5);
+    background: rgb(11, 120, 206, 0.3);
 }
 
 .gray_dark {
-    background: rgb(104,115,140, 0.5);
+    background: rgb(104,115,140, 0.3);
 }
 
 .green_dark {
-    background:rgb(48, 187, 187, 0.5);
+    background:rgb(48, 187, 187, 0.3);
 }
 
 .pink_dark {
-    background: rgb(216, 27, 96, 0.5);
+    background: rgb(216, 27, 96, 0.3);
 }
 
 .purple_dark {
-    background: rgb(85, 82, 153, 0.5);
+    background: rgb(85, 82, 153, 0.3);
 }
 
 .orange_dark {
-    background:rgb(255, 119, 1, 0.5);
+    background:rgb(255, 119, 1, 0.3);
 }
 
 .blueBorder{
