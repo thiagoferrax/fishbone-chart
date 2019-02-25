@@ -18,6 +18,14 @@ export default class FishboneChart extends Component {
         }        
     }
 
+    componentWillReceiveProps(nextProps) {
+        if(this.props.data !== nextProps.data) {
+            const data = nextProps.data
+            const effect = Object.keys(data)[this.state.index]
+            this.setState({causes: data[effect], effect})
+        }
+    }
+
     render() {
         if (!this.state.causes) {
             return <React.Fragment></React.Fragment>
