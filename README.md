@@ -1,8 +1,10 @@
 # fishbone-chart
+> 
 
-> Get a fishbone chart as a react component.
+Get a fishbone chart as a react component.
 
 [![NPM](https://img.shields.io/npm/v/fishbone-chart.svg)](https://www.npmjs.com/package/fishbone-chart) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 
 ![fishbonechart](https://user-images.githubusercontent.com/43149895/52946759-9ebd0280-3353-11e9-9dbd-d4188d5ec6a5.gif)
 
@@ -56,4 +58,3 @@ class Example extends Component {
 ## License
 
 MIT © [thiagoferrax](https://github.com/thiagoferrax)
-# fishbone-chart
