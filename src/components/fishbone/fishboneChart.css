@@ -40,9 +40,9 @@
     justify-content: center; 
     align-items: center;   
     width: 60%;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;        
-    color: #6c6c6c;
+    color: #4f4f4f;
     padding: 5px 0px;
 }
 
@@ -51,9 +51,9 @@
     justify-content: center; 
     align-items: center;   
     width: 60%;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;        
-    color: #6c6c6c;
+    color: #4f4f4f;
     padding: 5px 0px;
 }
 
@@ -77,8 +77,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6c6c6c;
-    font-size: 0.9em;
+    color: #4f4f4f;
+    font-size: 1em;
     font-weight: 400; 
     margin-bottom: 6px;   
     cursor: default;     
@@ -189,15 +189,15 @@
 
 .labelLineThrough{
     text-decoration: line-through;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
-    color: #6c6c6c;
+    color: #4f4f4f;
 }
 
 .label_{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;    
-    color: #6c6c6c;
+    color: #4f4f4f;
 }
 
 .effect {    
@@ -211,9 +211,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400; 
-    color: #6c6c6c;
+    color: #4f4f4f;
     padding: 5px 10px 5px 10px;  
 }
 
@@ -225,7 +225,7 @@
     flex: 3;
     font-size: 0.8em;
     font-weight: 400;
-    color: #6c6c6c;
+    color: #4f4f4f;
     text-align: right;
     height:100%;
     margin: 10px 0px;
