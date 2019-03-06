@@ -40,7 +40,7 @@
     justify-content: center; 
     align-items: center;   
     width: 60%;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400;        
     color: #4f4f4f;
     padding: 5px 0px;
@@ -51,7 +51,7 @@
     justify-content: center; 
     align-items: center;   
     width: 60%;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400;        
     color: #4f4f4f;
     padding: 5px 0px;
@@ -78,7 +78,7 @@
     justify-content: center;
     align-items: center;
     color: #4f4f4f;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400; 
     margin-bottom: 6px;   
     cursor: default;     
@@ -189,13 +189,13 @@
 
 .labelLineThrough{
     text-decoration: line-through;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400;
     color: #4f4f4f;
 }
 
 .label_{
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400;    
     color: #4f4f4f;
 }
@@ -211,7 +211,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 400; 
     color: #4f4f4f;
     padding: 5px 10px 5px 10px;  
@@ -223,7 +223,7 @@
     justify-content: center;
     align-items: flex-end;
     flex: 3;
-    font-size: 0.8em;
+    font-size: 0.85em;
     font-weight: 400;
     color: #4f4f4f;
     text-align: right;
