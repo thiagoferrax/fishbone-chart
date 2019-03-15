@@ -1,6 +1,6 @@
 {
   "name": "fishbone-chart",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Get a fishbone chart as a react component.",
   "author": "thiagoferrax",
   "license": "MIT",
