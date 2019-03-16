@@ -1,7 +1,7 @@
 .fishboneChart{
     display: flex;        
     justify-items: center;
-    min-height: 250px;
+    min-height: 200px;
 }
 
 .top {
@@ -300,5 +300,4 @@
     justify-content: center;
     align-items: center;
     min-height: 50%;
-    border: 2px solid goldenrod;
 }
