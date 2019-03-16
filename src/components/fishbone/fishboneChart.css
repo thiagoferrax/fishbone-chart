@@ -1,6 +1,7 @@
 .fishboneChart{
     display: flex;        
     justify-items: center;
+    min-height: 250px;
 }
 
 .top {
@@ -32,7 +33,6 @@
     flex: 1;
     display: flex;
     margin-right: 10px;
-    min-height: 50%;
 }
 
 .cause {    
@@ -64,8 +64,7 @@
     font-weight: 400;
     color: #4f4f4f;
     text-align: right;
-    padding: 20px 0px;
-    min-height: 80px;
+    padding: 15px 0px;
 }
 
 .legend {
@@ -300,4 +299,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 50%;
+    border: 2px solid goldenrod;
 }
