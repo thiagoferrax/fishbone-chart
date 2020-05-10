@@ -6,17 +6,16 @@
 
 .top {
     border-bottom: 2px solid;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .bottom {
     border-top: 2px solid;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .left {
     border-left: 2px solid;
-    border-radius: 10%;
 }
 
 .all {

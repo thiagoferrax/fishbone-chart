@@ -114,8 +114,8 @@ export default class FishboneChart extends Component {
     getEffect() {        
         const color = this.getColor(this.state.index)
         return (
-            <div className="effect">
-                <div className={`effectValue left ${color}_ ${color}Border`}>
+            <div className={`effect left ${color}_ ${color}Border`}>
+                <div className={`effectValue`}>
                     {this.state.effect}
                 </div>
             </div>
